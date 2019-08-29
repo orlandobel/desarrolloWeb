@@ -1,0 +1,62 @@
+.contenedor {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.caja {
+    border: 2px;
+    border-style:double;
+    border-color: rgba(150,150,150,0.5);
+    background-color: rgba(210,210,210,0.3);
+}
+
+.formulario {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.boton {
+    margin-top: 5px;
+    padding-left: 25%;
+}
+
+.btn-continuar {
+    background-color: blue;
+    color: white;
+}
+
+.btn-enviar {
+    background-color: green;
+    color: white;
+}
+
+.btn-rounded {
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+    font-size: 12pt;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+    padding: 2%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    padding: 2%;
+}

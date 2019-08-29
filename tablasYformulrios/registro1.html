@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Registro</title>
+        <style type="text/css"></style>
+        <link rel="stylesheet" type="text/css" href="src/css/hoja.css">
+    </head>
+    <body>
+
+        <div class="contenedor">
+            <div class="formulario caja">
+                <form action="registro2.php" method="post">
+                    <div class="input">
+                        <label>Usuario</label><br/>
+                        <input type="text" name="user" required id="user"><br/>
+                    </div>
+                    <div class="input">
+                        <label>Correo electrónico</label><br/>
+                        <input type="email" name="email" required id="email"><br/>
+                    </div>
+                    <div class="input">
+                        <label>Contraseña</label><br/>
+                        <input type="password" name="pass" required id="pass"><br/>
+                    </div>
+                    <div class="input">
+                        <label>Repetir contraseña</label><br/>
+                        <input type="password" name="pass2" required id="pass2"><br/>
+                    </div>
+                    <div class="boton">
+                        <input type="submit" class="btn-rounded btn-continuar" name="enviar" value="Continuar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
