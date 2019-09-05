@@ -2,6 +2,7 @@ DROP DATABASE IF EXISTS usuarios;
 
 CREATE DATABASE usuarios;
 
+USE usuarios;
 CREATE TABLE user(
     id INT NOT NULL AUTO_INCREMENT,
     user VARCHAR(30) NOT NULL,
