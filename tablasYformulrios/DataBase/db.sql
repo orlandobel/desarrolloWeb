@@ -10,7 +10,7 @@ CREATE TABLE user(
     pass VARCHAR(30) NOT NULL,
     tipo INT(1) NOT NULL,
 
-    PRIMARY KEY(id);
+    PRIMARY KEY(id)
 );
 
 CREATE TABLE datosPersonales(
@@ -23,7 +23,7 @@ CREATE TABLE datosPersonales(
     calle VARCHAR(45) NOT NULL,
     colonia VARCHAR(45) NOT NULL,
     cp VARCHAR(45) NOT NULL,
-    usuer_id INT NOT NULL,
+    user_id INT NOT NULL,
 
     PRIMARY KEY(id),
     CONSTRAINT fk_datosPersonales_user FOREIGN KEY(user_id) REFERENCES user(id)
@@ -48,7 +48,8 @@ CREATE TABLE deportivoCultural(
     problemasSalud VARCHAR(50),
     deporte VARCHAR(20),
     aCultural VARCHAR(20),
-
+    user_id INT NOT NULL,
+    
     PRIMARY KEY(id),
     CONSTRAINT fk_deportivoCultural_user FOREIGN KEY(user_id) REFERENCES user(id)
 );
