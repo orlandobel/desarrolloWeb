@@ -11,7 +11,7 @@
     </head>
     <body>
         <?php
-            /*$u   = $_POST['user'];
+            $u   = $_POST['user'];
             $p   = $_POST['pass'];
             $e   = $_POST['email'];
 
@@ -36,7 +36,7 @@
             $dp  = $_POST['depo'];
             $ac  = $_POST['acu'];
 
-            echo "usuario: ".$n."<br/>";
+            /*echo "usuario: ".$n."<br/>";
             echo "contraseña: ".$p."<br/>";
             echo "email: ".$e."<br/>";
 
@@ -115,7 +115,7 @@
 							<td>$170,750</td>
 						</tr>
 						<tr>
-							<td>Ashton Cox</td>
+							<td><?php echo $n; ?></td>
 							<td>Junior Technical Author</td>
 							<td>San Francisco</td>
 							<td>66</td>
