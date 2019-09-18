@@ -29,7 +29,7 @@
 
         <div class="contenedor">
             <div class="formulario caja">
-                <form action="resultado.php" method="post">
+                <form action="enviar.php" method="post">
                     <div class="input">
                         <label>¿Cuentas con seguro médico?</label><br/>
                         <input type="radio" name="seguro" value="si" required id="seguro">Si<br/>
