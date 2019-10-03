@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Registro</title>
         <style type="text/css"></style>
-        <link rel="stylesheet" type="text/css" href="src/css_custom/hoja.css">
+        <link rel="stylesheet" type="text/css" href="../src/css_custom/hoja.css">
     </head>
     <body>
         <?php

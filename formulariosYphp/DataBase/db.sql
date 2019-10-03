@@ -3,9 +3,9 @@ DROP DATABASE IF EXISTS usuarios;
 CREATE DATABASE usuarios;
 
 USE usuarios;
-CREATE TABLE user(
+CREATE TABLE users(
     id INT NOT NULL AUTO_INCREMENT,
-    user VARCHAR(30) NOT NULL,
+    usuario VARCHAR(30) NOT NULL,
     correo VARCHAR(60) NOT NULL,
     pass VARCHAR(30) NOT NULL,
     tipo INT(1) NOT NULL,
@@ -22,11 +22,12 @@ CREATE TABLE datosPersonales(
     sexo BOOLEAN NOT NULL,
     calle VARCHAR(45) NOT NULL,
     colonia VARCHAR(45) NOT NULL,
+    num VARCHAR(5) NOT NULL,
     cp VARCHAR(45) NOT NULL,
     user_id INT NOT NULL,
 
     PRIMARY KEY(id),
-    CONSTRAINT fk_datosPersonales_user FOREIGN KEY(user_id) REFERENCES user(id)
+    CONSTRAINT fk_datosPersonales_users FOREIGN KEY(user_id) REFERENCES users(id)
 );
 
 CREATE TABLE datosEscolares(
@@ -38,7 +39,7 @@ CREATE TABLE datosEscolares(
     user_id INT NOT NULL,
 
     PRIMARY KEY(id),
-    CONSTRAINT fk_datosEscolares_user FOREIGN KEY(user_id) REFERENCES user(id)
+    CONSTRAINT fk_datosEscolares_users FOREIGN KEY(user_id) REFERENCES users(id)
 );
 
 CREATE TABLE deportivoCultural(
@@ -49,7 +50,7 @@ CREATE TABLE deportivoCultural(
     deporte VARCHAR(20),
     aCultural VARCHAR(20),
     user_id INT NOT NULL,
-    
+
     PRIMARY KEY(id),
-    CONSTRAINT fk_deportivoCultural_user FOREIGN KEY(user_id) REFERENCES user(id)
+    CONSTRAINT fk_deportivoCultural_users FOREIGN KEY(user_id) REFERENCES users(id)
 );

@@ -7,9 +7,9 @@
     $con = mysqli_connect($host,$user,$pass,$table);
 
     if(!$con) {
-        echo "Error en la coneccion"."<br/>".PHP_EOL();
+        echo "Error en la coneccion"."<br/>".PHP_EOL()."<br/>";
+        echo "error: ".mysqli_connect_error().PHP_EOL()."<br/>";
+        echo "erno: ".mysqli_connect_erno().PHP_EOL()."<br/>";
         exit();
     }
-
-    echo "Coneccion establecida"."<br/>";
 ?>
