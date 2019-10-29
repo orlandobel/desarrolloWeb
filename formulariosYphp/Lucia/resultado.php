@@ -11,7 +11,7 @@
     </head>
     <body>
         <?php
-            include "DataBase/coneccion.php";
+            include "../DataBase/coneccion.php";
         ?>
 
         <div class="page-content">

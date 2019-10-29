@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Registro</title>
-        <link rel="stylesheet" type="text/css" href="../src/css_custom/hoja.css">
+        <link rel="stylesheet" type="text/css" href="../../src/css_custom/hoja.css">
     </head>
     <body>
         <?php
@@ -29,7 +29,7 @@
 
         <div class="contenedor">
             <div class="formulario caja">
-                <form action="../DataBase/enviar.php" method="post">
+                <form action="../../DataBase/enviar.php" method="post">
                     <div class="input">
                         <label>¿Cuentas con seguro médico?</label><br/>
                         <input type="radio" name="seguro" value="1" required id="seguro">Si<br/>
