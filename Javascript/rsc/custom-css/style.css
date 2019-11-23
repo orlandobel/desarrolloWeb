@@ -1,0 +1,24 @@
+.center {
+    padding: 1px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.box {
+    padding: 2%;
+    border: 1px;
+    border-style:double;
+    border-color: rgba(150,150,150,0.5);
+    background-color: rgba(210,210,210,0.3);
+}
+
+.botones {
+    padding: 5%;
+}
+
+.boton-center {
+    position: relative;
+    left: 30%;
+}
